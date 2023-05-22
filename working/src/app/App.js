@@ -8,25 +8,25 @@ import Category from "../components/Category";
 import Author from "../components/Author";
 import Profile from "../components/Profile";
 import EditProfileForm from "../components/EditProfileForm";
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import {RouterProvider, createBrowserRouter, createRoutesFromElements, Route} from 'react-router-dom';
 
 import Root from "../components/Root";
 
 import "./App.css";
 
 
-  /* Wrap this Root Route to create Router here */
+/* Wrap this Root Route to create Router here */
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route path="/" element={ <Root/> }>
-    {/* Add Routes here! */}
-    <Route path="/about" element={<About/>}/>
-  </Route>
+    <Route path="/" element={<Root/>}>
+        {/* Add Routes here! */}
+        <Route path="/about" element={<About/>}/>
+    </Route>
 ));
 
 function App() {
-  return (
-      <RouterProvider router={ router } />
-  );
+    return (
+        <RouterProvider router={router}/>
+    );
 }
 
 export default App;
