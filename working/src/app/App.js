@@ -8,9 +8,9 @@ import Category from "../components/Category";
 import Author from "../components/Author";
 import Profile from "../components/Profile";
 import EditProfileForm from "../components/EditProfileForm";
-import Root from "../components/Root";
+import { RouterProvider, Route } from 'react-router-dom';
 
-import { Route } from 'react-router-dom';
+import Root from "../components/Root";
 
 import "./App.css";
 
@@ -22,10 +22,7 @@ const router =
 
 function App() {
   return (
-    <>
-      { /* Replace below and add Router Provider*/}
-      <p>REPLACE ME WITH A ROUTER PROVIDER</p>
-    </>
+      <RouterProvider router={ router } />
   );
 }
 
